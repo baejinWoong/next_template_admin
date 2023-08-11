@@ -1,0 +1,117 @@
+//  페이지별 네비게이션
+.locationNav {
+  &.crBlack {
+    ul {
+      li {
+        &.active {
+          color: #191919;
+        }
+      }
+    }
+  }
+  &.crPurple {
+    ul {
+      li {
+        &.active {
+          color: #6d68cb;
+        }
+      }
+    }
+  }
+  strong {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 24px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.4;
+    color: #191919;
+  }
+  ul {
+    display: inline-block;
+    vertical-align: middle;
+    li {
+      display: inline-block;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #d0d0d2;
+      & + li {
+        position: relative;
+        margin-left: 29px;
+        &:before {
+          content: '';
+          position: absolute;
+          top: 6px;
+          left: -16px;
+          width: 8px;
+          height: 12px;
+          color: #d0d0d2;
+          background: url(../public/icons/ico_arrow_gray_01.png) no-repeat center;
+        }
+      }
+    }
+  }
+}
+
+// 체크박스
+.inpCheckBox {
+  position: relative;
+  &.fontSize14 {
+    input {
+      & + label {
+        font-size: 14px;
+        &:before {
+          top: 4px;
+        }
+      }
+    }
+  }
+  & + .inpCheckBox {
+    margin-left: 24px;
+  }
+  input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+    &:checked {
+      & + label {
+        &:before {
+          border-color: #333333;
+          background: #333333 url(../public/icons/ico_check_box_white_01.png) no-repeat center;
+        }
+      }
+    }
+    & + label {
+      padding-left: 26px;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #333333;
+      cursor: pointer;
+      &:before {
+        content: '';
+        position: absolute;
+        top: 3px;
+        left: 0;
+        width: 16px;
+        height: 16px;
+        border-radius: 4px;
+        border: 1px solid #a1a1a4;
+      }
+    }
+    &:disabled {
+      & + label {
+        color: #d0d0d2;
+        &:before {
+          border-color: #d0d0d2;
+          background: #f3f3f6;
+        }
+      }
+    }
+  }
+}

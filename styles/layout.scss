@@ -1,0 +1,97 @@
+.wrap {
+  max-width: 1440px;
+  padding: 128px 50px 60px;
+  margin: 0 auto;
+}
+.section {
+  padding: 40px 0;
+  border-top: 1px solid #191919;
+  .titleWrap {
+    & + .subTitleBox {
+      margin-top: 98px;
+    }
+    h2 {
+      font-weight: 700;
+      font-size: 60px;
+      line-height: 1.2;
+      color: #191919;
+    }
+    p {
+      margin-top: 40px;
+      font-size: 20px;
+      line-height: 1.5;
+      color: #191919;
+    }
+  }
+  .subTitleBox {
+    &.subTitleBox {
+      margin-top: 100px;
+    }
+    h3 {
+      margin-bottom: 40px;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 1.3;
+      color: #191919;
+    }
+    & > p {
+      margin-top: 20px;
+      font-size: 20px;
+      line-height: 1.5;
+      color: #191919;
+    }
+    .paletteArea {
+      ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        li {
+          width: calc(12.5% - 15.75px);
+          & + li {
+            margin-left: 18px;
+          }
+          .palette {
+            border: 1px solid #d0d0d2;
+            border-radius: 8px;
+            overflow: hidden;
+            .paletteColor {
+              height: 80px;
+            }
+            .paletteText {
+              padding: 12px 15px;
+              strong {
+                display: block;
+                font-size: 20px;
+                line-height: 1.4;
+              }
+              span {
+                display: block;
+                margin-top: 4px;
+                font-size: 16px;
+                line-height: 1.5;
+                color: #a1a1a4;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .componentBox {
+    position: relative;
+    margin-top: 45px;
+    & > div {
+      & + div {
+        margin-top: 50px;
+      }
+    }
+    h4 {
+      margin-bottom: 28px;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 1.5;
+      color: #a1a1a4;
+    }
+  }
+}

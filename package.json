@@ -1,0 +1,55 @@
+{
+  "name": "next_template_admin",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "NODE_ENV=production node ./server.js",
+    "lint": "next lint",
+    "start:background": "NODE_ENV=production nohup node ./server.js &",
+    "stop:background": "source \"$PWD\"/.env && fuser -k \"$PORT\"/tcp"
+  },
+  "eslintIgnore": [
+    "next.config.js",
+    "server.js"
+  ],
+  "dependencies": {
+    "@types/node": "18.15.11",
+    "@types/react": "^18.0.33",
+    "@types/react-datepicker": "^4.10.0",
+    "@types/react-dom": "18.0.8",
+    "axios": "^1.3.2",
+    "chart.js": "^4.3.0",
+    "dotenv": "^16.0.3",
+    "font-awesome": "^4.7.0",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
+    "next": "12.3.3",
+    "prettier": "^2.8.4",
+    "react": "18.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-datepicker": "^4.11.0",
+    "react-dom": "18.2.0",
+    "recoil": "^0.7.6",
+    "sass": "^1.58.0",
+    "typescript": "*"
+  },
+  "devDependencies": {
+    "@types/node": "18.15.11",
+    "@types/react": "^18.0.33",
+    "@types/react-dom": "18.0.8",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.42.1",
+    "eslint": "8.34.0",
+    "eslint-config-next": "13.1.6",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.31.10",
+    "eslint-plugin-react-hooks": "^4.6.0"
+  }
+}
